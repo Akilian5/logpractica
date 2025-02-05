@@ -1,0 +1,161 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url(Fondo-pagina2.jpg) no-repeat;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center;
+}
+
+.contenedor{
+
+width: 420px;
+background-color: transparent;
+border:2px solid rgba(255,255,255,.2);
+backdrop-filter: blur(20px);
+box-shadow: 0,0,10px rgba(0,0,0,.2);
+color: #fff;
+border-radius: 12px;
+padding: 30px 40px;
+
+}
+
+.ache1{
+
+    color: rgb(20, 151, 64);
+    animation: shift 3s ease-in-out infinite ;
+}
+
+@keyframes shift {
+    0%, 100% {
+        clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+
+
+.contenedor h1{
+
+text-align: center;
+font-size: 40px;
+;
+}
+
+.contenedor .cont-input{
+
+position: relative;
+width: 100%;
+height: 50px;
+margin: 30px 0;
+}
+
+.cont-input input{
+
+width: 100%;
+height: 100%;
+border: none;
+outline: none;
+background: transparent;
+border: 2px solid white;
+border-radius: 50px;
+color: #fff;
+font-size: 20px;
+padding: 20px 45px 20px 20px;
+}
+
+
+.cont-input input::placeholder{
+
+color: #fff;
+
+}
+
+.cont-input i{
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.contenedor .recordarInfo{
+
+display: flex;
+justify-content: space-between;
+font-size: 14.5px;
+margin: -15px 0 15px ;
+
+}
+
+.recordarInfo label input{
+
+accent-color: #fff;
+margin-right: 3px;
+
+}
+
+.recordarInfo a{
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.recordarInfo a:hover{
+text-decoration: underline;
+}
+
+.contenedor .boton{
+
+
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 45px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 17px;
+    color: #333;
+    font-weight: 600;
+
+}
+
+.contenedor .registrarse{
+
+
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.registrarse a{
+
+    padding-left: 5px;
+}
+
+.registrarse p a{
+
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+}
+
+.registrarse p a:hover{
+
+    text-decoration: underline;
+}
